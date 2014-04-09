@@ -19,6 +19,7 @@ FileUtils.mkdir './tmp'
 # image.format "gif"
 # image.write res
 
+# https://github.com/carrierwaveuploader/carrierwave/blob/master/lib/carrierwave/processing/mini_magick.rb
 class ImgProcessor
   include CarrierWave::MiniMagick
   attr_accessor :src_path, :dest_path
